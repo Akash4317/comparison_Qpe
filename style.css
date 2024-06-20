@@ -235,11 +235,11 @@ header .button-cntnr button {
 }
 
 .feature-box-div-1 {
-    background-color: #fff1f1;
+    /* background-color: #fff1f1; */
 }
 
 .feature-box-div-2 {
-    background-color: #e5f2ff;
+    /* background-color: #e5f2ff; */
 }
 
 .feature-box-div-3 {
@@ -278,7 +278,7 @@ header .button-cntnr button {
 }
 
 .feature-image {
-    width: 280px;
+    max-width: 100%;
     margin: 0 auto 15px;
 }
 
@@ -290,7 +290,7 @@ header .button-cntnr button {
         width: 100%;
     }
     .feature-image {
-        width: 180px;
+        /* width: 180px; */
     }
 }
 
