@@ -493,20 +493,21 @@ header .button-cntnr button {
     padding: 14px 20px;
     box-sizing: border-box;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .accordion-item .accordion-item-title:hover {
     text-decoration: underline;
 }
 
-.accordion-item .accordion-item-title:hover.icon {
+.accordion-item .accordion-item-title:hover .icon {
     text-decoration: none;
 }
 
 .accordion-item .accordion-item-desc {
     max-height: 0;
     overflow: hidden;
-    transition: 0.5s ease-in;
+    transition: max-height 0.5s ease, padding 0.5s ease;
     font-size: 14px;
     line-height: 22px;
     font-weight: 300;
@@ -520,11 +521,12 @@ header .button-cntnr button {
     position: absolute;
     height: 0;
     width: 0;
+    opacity: 0;
 }
 
 .accordion-item input[type="checkbox"]:checked~.accordion-item-desc {
-    max-height: 250px;
-    opacity: 1;
+    max-height: 500px;
+    /* Large enough to fit the content */
     padding: 10px 20px 20px;
 }
 
@@ -547,8 +549,8 @@ header .button-cntnr button {
 }
 
 @media screen and (max-width: 767px) {
-    .accordion {
-        padding: 0 16px;
+    .accordion_section {
+        padding: 20px 16px;
     }
     .accordion h1 {
         font-size: 22px;
