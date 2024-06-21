@@ -243,11 +243,11 @@ header .button-cntnr button {
 }
 
 .feature-box-div-3 {
-    background-color: #f1ffeb;
+    /* background-color: #f1ffeb; */
 }
 
 .feature-box-div-4 {
-    background-color: #fffce6;
+    /* background-color: #fffce6; */
 }
 
 .feature-box-div-5 {
@@ -497,7 +497,7 @@ header .button-cntnr button {
 }
 
 .accordion-item .accordion-item-title:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .accordion-item .accordion-item-title:hover .icon {
@@ -507,7 +507,7 @@ header .button-cntnr button {
 .accordion-item .accordion-item-desc {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease;
     font-size: 14px;
     line-height: 22px;
     font-weight: 300;
@@ -526,8 +526,6 @@ header .button-cntnr button {
 
 .accordion-item input[type="checkbox"]:checked~.accordion-item-desc {
     max-height: 500px;
-    /* Large enough to fit the content */
-    padding: 10px 20px 20px;
 }
 
 .accordion-item input[type="checkbox"]:checked~.accordion-item-title .icon:after {
