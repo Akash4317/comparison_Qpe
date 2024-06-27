@@ -6,13 +6,19 @@
 }
 
 :root {
-    --primary-background-color: #f9fafb;
-    --secondry-background-color: #f8f6f6;
-    --primary-text-highlight-color: #333;
-    --primary-text-color: #ffffff;
-    --button-color: #f44336;
-    --primary-color: #000;
-    --primary-link-color: ##007bff;
+    --primary-color: #1a1a1a;
+    --primary-navbar-color: #f8f7f4;
+    --primary-text: #ffffff;
+    --primary-offer-color: #d2d7d2;
+    --nav-color: #f8f7f4;
+    --ccc-color: #ccc;
+    --333-color: #333;
+    --text-color: #818181;
+    --custom-dropdown-color: #f0f0f0;
+    --red-color: red;
+    --indicator-inactive-color: #000;
+    --indicator-active-color: #fff;
+    --carousel-bg-color: #f8f7f4;
 }
 
 
@@ -116,9 +122,9 @@ header .button-cntnr button {
 }
 
 .subtext_2 {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 27px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5rem;
     /* margin: 15px 0 30px; */
     color: var(--primary-color);
 }
@@ -135,22 +141,23 @@ header .button-cntnr button {
 }
 
 .try-now {
-    background-color: var(--button-color);
-    color: var(--primary-text-color);
+    background-color: var(--red-color);
+    color: var(--primary-text);
     border: none;
 }
 
 .book-demo {
     /* border: none; */
-    border: 1.5px solid var(--button-color);
-    color: var(--button-color);
-    background-color: var(--primary-text-color);
+    border: 1.5px solid var( --red-color);
+    color: var(--red-color);
+    background-color: var(--primary-text);
 }
 
 .bottom-text {
-    font-size: 17px;
+    font-size: 16px;
     margin: 10px 0 10px;
     font-weight: 600;
+    color: #1a1a1a;
 }
 
 .icon-container {
@@ -181,6 +188,12 @@ header .button-cntnr button {
 .arrow {
     width: 30px;
     height: auto;
+}
+
+@media(max-width:634px) {
+    .navigation {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -251,11 +264,11 @@ header .button-cntnr button {
 }
 
 .feature-box-div-5 {
-    background-color: #fdf0e5;
+    /* background-color: #fdf0e5; */
 }
 
 .feature-box-div-6 {
-    background-color: #f5f3ff;
+    /* background-color: #f5f3ff; */
 }
 
 .feature-box h2 {
@@ -264,10 +277,11 @@ header .button-cntnr button {
 }
 
 .feature-box p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 27px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 20px;
+    color: #1a1a1a;
 }
 
 .feature-box a {
@@ -278,11 +292,31 @@ header .button-cntnr button {
 }
 
 .feature-image {
-    max-width: 100%;
+    max-width: 500px;
     margin: 0 auto 15px;
+    max-height: 300px;
 }
 
 @media(max-width:768px) {
+    .feature-box,
+    .card_container {
+        padding: 0;
+    }
+    .links-footer {
+        gap: 1.5rem !important;
+        margin-top: 1rem !important;
+    }
+    .container-footer {
+        padding: 1rem !important;
+    }
+    .content h2 {
+        font-size: 30px !important;
+        line-height: 40px !important;
+        margin-top: 0 !important;
+    }
+    .cta a button {
+        margin: auto;
+    }
     .card_container {
         flex-direction: column;
     }
@@ -290,7 +324,7 @@ header .button-cntnr button {
         width: 100%;
     }
     .feature-image {
-        /* width: 180px; */
+        width: 100%;
     }
 }
 
@@ -331,8 +365,9 @@ header .button-cntnr button {
 
 .listing_item ul li {
     font-size: 16px;
-    font-weight: 510;
+    font-weight: 600;
     margin: 35px 0;
+    color: #1a1a1a;
 }
 
 .listing_item_image {
@@ -433,6 +468,8 @@ header .button-cntnr button {
     font-weight: 300;
     line-height: 21px;
     margin: 10px 0 0 0;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 .card .username {
@@ -478,7 +515,6 @@ header .button-cntnr button {
     border: 1px solid #fcfcfc;
     border-radius: 6px;
     background: var(--primary-text-color);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 .accordion-item .accordion-item-title {
@@ -486,7 +522,7 @@ header .button-cntnr button {
     margin: 0;
     display: flex;
     width: 100%;
-    font-size: 17px;
+    font-size: 16px;
     cursor: pointer;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -494,6 +530,8 @@ header .button-cntnr button {
     box-sizing: border-box;
     align-items: center;
     transition: background-color 0.3s ease;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 .accordion-item .accordion-item-title:hover {
@@ -510,11 +548,39 @@ header .button-cntnr button {
     transition: max-height 0.5s ease;
     font-size: 14px;
     line-height: 22px;
-    font-weight: 300;
-    color: #444;
-    border-top: 1px dashed #ddd;
+    color: #1a1a1a;
+    border-top: 1px solid #ddd;
     padding: 0 20px;
     box-sizing: border-box;
+    padding-top: 15px;
+    line-height: 1.5rem;
+}
+
+.links-footer {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.links-footer a,
+.links-footer .font-medium {
+    font-size: 16px;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.container-footer {
+    max-width: 1503px;
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-footer .socical_icons {
+    gap: 1rem;
+    display: flex;
 }
 
 .accordion-item input[type="checkbox"] {
@@ -572,8 +638,8 @@ header .button-cntnr button {
 .main-container {
     border-radius: 24px;
     overflow: hidden;
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -611,7 +677,7 @@ header .button-cntnr button {
 
 .cta a button {
     font-size: 15px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 9999px;
     background-color: white;
     color: #333;
@@ -619,6 +685,9 @@ header .button-cntnr button {
     align-items: center;
     cursor: pointer;
     gap: 8px;
+    border: 0;
+    color: #111827;
+    font-weight: 600;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -670,7 +739,7 @@ header .button-cntnr button {
     position: relative;
     white-space: nowrap;
     background-color: #10002A;
-    padding: 45px 0;
+    padding: 30px 0;
     cursor: pointer;
 }
 
@@ -700,7 +769,7 @@ header .button-cntnr button {
 }
 
 .gradient-text {
-    background: linear-gradient(to right, indigo, purple, pink);
+    background: linear-gradient(to right, rgb(99 102 241), rgb(236 72 153));
     -webkit-background-clip: text;
     color: transparent;
 }
